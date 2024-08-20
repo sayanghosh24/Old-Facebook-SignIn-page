@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eceff5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header .login {
+    display: flex;
+    align-items: center;
+}
+
+.header .login form {
+    display: flex;
+    align-items: center;
+}
+
+.header .login input[type="text"],
+.header .login input[type="password"] {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    width: 150px;
+}
+
+.header .login input[type="text"]::placeholder,
+.header .login input[type="password"]::placeholder {
+    color: #aaa;
+}
+
+.header .login button {
+    padding: 5.5px 15px;
+    background-color: #eff2ff;
+    color: rgb(71, 67, 173);
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.header .remember {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.header .remember input {
+    margin-right: 5px;
+}
+
+.header .remember a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.content {
+    width: 60%;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: #1e325e;
+}
+.content img{
+    margin-top: 50px;
+    width: 80%;
+    height: 60%;
+}
+.right {
+    width: 35%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.right select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.birthday {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday select {
+    width: 30%;
+}
+
+.right button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
