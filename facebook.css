@@ -5,6 +5,16 @@ body {
     padding: 0;
 }
 
+.page {
+    display: none;
+    /* Hide both pages by default */
+}
+
+.page1 {
+    display: block;
+    /* Show the first page by default */
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -14,24 +24,19 @@ body {
     color: white;
 }
 
-.header .logo h1 {
-    font-size: 36px;
+.header h1 {
+    font-size: 2em;
     margin: 0;
     font-weight: bold;
 }
 
-.header .login {
+.login {
     display: flex;
     align-items: center;
 }
 
-.header .login form {
-    display: flex;
-    align-items: center;
-}
-
-.header .login input[type="text"],
-.header .login input[type="password"] {
+.login input[type="text"],
+.login input[type="password"] {
     margin-right: 10px;
     padding: 5px;
     border-radius: 3px;
@@ -39,13 +44,8 @@ body {
     width: 150px;
 }
 
-.header .login input[type="text"]::placeholder,
-.header .login input[type="password"]::placeholder {
-    color: #aaa;
-}
-
-.header .login button {
-    padding: 5.5px 15px;
+.login button {
+    padding: 6px 16px;
     background-color: #eff2ff;
     color: rgb(71, 67, 173);
     border: none;
@@ -54,94 +54,243 @@ body {
     cursor: pointer;
 }
 
-.header .remember {
+.remember {
     display: flex;
     align-items: center;
     margin-left: 15px;
 }
 
-.header .remember input {
+.remember input {
     margin-right: 5px;
 }
 
-.header .remember a {
+.remember a {
     margin-left: 10px;
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.8em;
 }
 
 .main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
 }
 
-.content {
-    width: 60%;
+.content, .right {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
 }
 
 .content p {
-    font-size: 20px;
+    font-size: 1.25em;
     margin-bottom: 20px;
     font-weight: bolder;
     color: #1e325e;
 }
-.content img{
-    margin-top: 50px;
-    width: 80%;
-    height: 60%;
+
+.content img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
 }
+
 .right {
-    width: 35%;
     padding: 20px;
     border-radius: 5px;
 }
 
 .right h2 {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.right p {
-    font-size: 14px;
+.right .join {
+    font-size: 0.9em;
     color: #666;
     margin-bottom: 20px;
 }
 
-.right input[type="text"], .right input[type="password"] {
-    width: 100%;
+.right .names {
+    width: 30%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 1px solid #ddd;
 }
 
-.right select {
-    width: 100%;
+.right .email-password {
+    width: 64.6%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 1px solid #ddd;
 }
 
-.birthday {
-    display: flex;
-    justify-content: space-between;
+.right .sex {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .birthday select {
-    width: 30%;
+    width: 14%;
+    padding: 5px;
+    margin-top: -10%;
+    background-color: #9e9e9ea6;
+    border-radius: 5px;
+}
+
+.year {
+    margin-top: -3px;
+}
+
+.message {
+    margin-top: -7px;
 }
 
 .right button {
-    width: 100%;
+    width: 30%;
     padding: 10px;
-    background-color: #4267b2;
+    background-color: #267431;
     color: white;
+    font-weight: bolder;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.page2 {
+    display: none;
+}
+
+.page2 .container {
+    width: 90%;
+    max-width: 360px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.page2 .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page2 .logo {
+    width: 100%;
+
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.page2 .icons img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+.page2 .login-box {
+    text-align: center;
+}
+
+.page2 .login-box input[type="text"],
+.page2 .login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.page2 .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.page2 .login-box button:hover {
+    background-color: #165db5;
+}
+
+.page2 .login-box .forgot {
+    display: block;
+    margin-top: 12px;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.page2 .login-box .forgot:hover {
+    text-decoration: underline;
+}
+
+.page2 .login-box hr {
+    margin: 20px 0;
+}
+
+.page2 .create-account {
+    width: 100%;
+    padding: 12px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.page2 .create-account:hover {
+    background-color: #36a420;
+}
+
+.page2 .language-options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page2 .language-options a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.page2 .language-options a:hover {
+    text-decoration: underline;
+}
+
+.page2 .language-options span {
+    color: #777;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content, .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .page1 {
+        display: none;
+        /* Hide first page */
+    }
+
+    .page2 {
+        display: block;
+        /* Show second page */
+    }
 }
