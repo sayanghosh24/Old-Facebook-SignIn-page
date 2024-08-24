@@ -1,62 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Sign Up</title>
+    <title>Facebook Page</title>
     <link rel="stylesheet" href="facebook.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>facebook</h1>
-            <div class="login">
-                <form action="#">
-                    <label for="email">Email : &nbsp;</label>
-                    <input type="text" id="email" name="email">
-                    <label for="password">Password :&nbsp;</label>
-                    <input type="password" id="password" name="password">
-                    <button type="submit">Login</button>
-                    <div class="remember">
-                        <input type="checkbox" id="rememberMe">
-                        <label for="rememberMe">Remember Me</label>
-                        <a href="#">Forgot your password?</a>
-                    </div>
-                </form>
+    <!-- First Page Layout -->
+    <div class="page page1">
+        <div class="container">
+            <div class="header">
+                <h1>facebook</h1>
+                <div class="login">
+                    <form action="#">
+                        <label for="email">Email : &nbsp;</label>
+                        <input type="text" id="email" name="email">
+                        <label for="password">Password :&nbsp;</label>
+                        <input type="password" id="password" name="password">
+                        <button type="submit">Login</button>
+                        <div class="remember">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember Me</label>
+                            <a href="#">Forgot your password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="main">
+                <div class="content">
+                    <p>Facebook helps you connect and share with <br> the people in your life.</p>
+                    <img src="facebook-removebg-preview.png" alt="World Map">
+                </div>
+                <div class="right">
+                    <h2>Sign Up</h2>
+                    <p class="join">It's free and anyone can join</p>
+                    <form>
+                        <input class="names" type="text" placeholder="First Name">
+                        <input class="names" type="text" placeholder="Last Name">
+                        <input class="email-password" type="text" placeholder="Your Email"> <br>
+                        <input class="email-password" type="password" placeholder="New Password">
+                        <p class="year">Birthday</p>
+                        <div class="birthday">
+                            <select name="month">
+                                <option value="month">Month</option>
+                            </select>
+                            <select name="day">
+                                <option value="day">Day</option>
+                            </select>
+                            <select name="year">
+                                <option value="year">Year</option>
+                            </select>
+                        </div>
+                        <input class="sex" type="radio" name="gender" value="male"> Male
+                        <input class="sex" type="radio" name="gender" value="female"> Female
+                        <p class="message">By clicking Cimate an account, you agree to our Terms and cochain that you
+                            have imad our Data Pulicy, including our cokiee Policy. You may receive SMS message
+                            notifications from Facebook and can opt out at any time</p>
+                        <button type="submit">Create an account</button>
+                        <p><a href="#">Create a page </a>for a celebrity,brand or business</p>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="main">
-            <div class="content">
-                <p>Facebook helps you connect and share with <br> the people in your life.</p>
-                <img src="facebook-removebg-preview.png" alt="World Map">
+    </div>
+
+    <!-- Second Page Layout -->
+    <div class="page page2">
+        <div class="container">
+            <div class="header">
+                <h1 style="margin-left: 24%; padding: 10px;" class="title">Facebook</h1>
             </div>
-            <div class="right">
-                <h2>Sign Up</h2>
-                <p>It's free and anyone can join</p>
+            <div class="login-box">
                 <form>
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="text" placeholder="Your Email">
-                    <input type="password" placeholder="New Password">
-                    <select name="sex">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-                    <div class="birthday">
-                        <select name="month">
-                            <option value="month">Month</option>
-                        </select>
-                        <select name="day">
-                            <option value="day">Day</option>
-                        </select>
-                        <select name="year">
-                            <option value="year">Year</option>
-                        </select>
-                    </div>
-                    <button type="submit">Sign Up</button>
+                    <input type="text" placeholder="Phone number or email address" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">LOG IN</button>
+                    <a href="#" class="forgot">Forgotten password?</a>
                 </form>
+                <hr>
+                <button class="create-account">CREATE NEW FACEBOOK ACCOUNT</button>
+            </div>
+            <div class="language-options">
+                <a href="#">English</a>
+                <span> · </span>
+                <a href="#">اردو</a>
+                <span> · </span>
+                <a href="#">More...</a>
             </div>
         </div>
     </div>
 </body>
+
 </html>
