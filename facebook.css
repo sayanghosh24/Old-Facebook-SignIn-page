@@ -7,12 +7,10 @@ body {
 
 .page {
     display: none;
-    /* Hide both pages by default */
 }
 
 .page1 {
     display: block;
-    /* Show the first page by default */
 }
 
 .header {
@@ -271,7 +269,6 @@ body {
     color: #777;
 }
 
-/* Media Query for small screens */
 @media (max-width: 768px) {
     .main {
         flex-direction: column;
@@ -286,11 +283,9 @@ body {
 @media (max-width: 480px) {
     .page1 {
         display: none;
-        /* Hide first page */
     }
 
     .page2 {
         display: block;
-        /* Show second page */
     }
 }
