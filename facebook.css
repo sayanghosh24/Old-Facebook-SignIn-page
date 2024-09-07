@@ -5,14 +5,6 @@ body {
     padding: 0;
 }
 
-.page {
-    display: none;
-}
-
-.page1 {
-    display: block;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -114,7 +106,7 @@ body {
 }
 
 .right .names {
-    width: 30%;
+    width: 45%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
@@ -122,7 +114,7 @@ body {
 }
 
 .right .email-password {
-    width: 64.6%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
@@ -130,28 +122,18 @@ body {
 }
 
 .right .sex {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .birthday select {
-    width: 14%;
+    width: 30%;
     padding: 5px;
-    margin-top: -10%;
-    background-color: #9e9e9ea6;
+    background-color: #f0f0f0;
     border-radius: 5px;
 }
 
-.year {
-    margin-top: -3px;
-}
-
-.message {
-    margin-top: -7px;
-}
-
 .right button {
-    width: 30%;
+    width: 100%;
     padding: 10px;
     background-color: #267431;
     color: white;
@@ -160,9 +142,14 @@ body {
     border-radius: 3px;
     cursor: pointer;
 }
-
 .page2 {
     display: none;
+
+}
+
+.secondpage {
+    display: flex;
+    justify-content: center;
 }
 
 .page2 .container {
@@ -173,27 +160,20 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    background-color: transparent;
+
 }
 
-.page2 .header {
-    text-align: center;
-    margin-bottom: 20px;
-}
+.facebookk {
+    width: 360px;
+    height: 100%;
+    margin-left: -20px;
+    margin-right: 20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
 
-.page2 .logo {
-    width: 100%;
+    
 
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.page2 .icons img {
-    width: 24px;
-    margin: 0 5px;
-}
-
-.page2 .login-box {
-    text-align: center;
 }
 
 .page2 .login-box input[type="text"],
@@ -202,7 +182,7 @@ body {
     padding: 12px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #e8e8e8;
     border-radius: 4px;
 }
 
@@ -221,19 +201,18 @@ body {
     background-color: #165db5;
 }
 
-.page2 .login-box .forgot {
-    display: block;
-    margin-top: 12px;
-    color: #1877f2;
+.forgot {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-decoration: none;
 }
 
-.page2 .login-box .forgot:hover {
+.forgot:hover {
+    color: #165db5;
     text-decoration: underline;
-}
 
-.page2 .login-box hr {
-    margin: 20px 0;
 }
 
 .page2 .create-account {
@@ -245,6 +224,7 @@ body {
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 25px;
 }
 
 .page2 .create-account:hover {
@@ -268,6 +248,8 @@ body {
 .page2 .language-options span {
     color: #777;
 }
+
+
 
 @media (max-width: 768px) {
     .main {
